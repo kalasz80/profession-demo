@@ -1,0 +1,3 @@
+<h1>Job activation!</h1>
+{% set url = app.request.getSchemeAndHttpHost() ~ path('profession_job_show', {'id': job.id}) %}
+<p>Your job has been activated: <a href="{{ url }}">{{ job.position }} ({{ job.id }})</a></p>

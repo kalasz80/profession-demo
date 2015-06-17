@@ -1,0 +1,14 @@
+Profession\JobBundle\Entity\Orientation:
+    type: entity
+    table: orientation
+    repositoryClass: Profession\JobBundle\Repository\OrientationRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 255
+            unique: true
+            nullable: false

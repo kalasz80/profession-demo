@@ -1,0 +1,4 @@
+profession_job:
+    resource: "@ProfessionJobBundle/Resources/config/routing.yml"
+    prefix:   /job
+

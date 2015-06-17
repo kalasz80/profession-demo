@@ -1,0 +1,11 @@
+profession_job_show:
+    path:     /{id}
+    defaults: { _controller: ProfessionJobBundle:Default:show }
+    methods: [GET]
+    requirements:
+        id:  \d+
+
+profession_job_activation:
+    path:     /activation
+    defaults: { _controller: ProfessionJobBundle:Default:activation }
+    methods: [POST]

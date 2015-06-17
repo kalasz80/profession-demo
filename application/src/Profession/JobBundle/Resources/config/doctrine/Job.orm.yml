@@ -1,0 +1,33 @@
+Profession\JobBundle\Entity\Job:
+    type: entity
+    table: job
+    repositoryClass: Profession\JobBundle\Repository\JobRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        position:
+            type: string
+            length: 255
+        created:
+            type: datetime
+        activated:
+            type: datetime
+            nullable: true
+            default: null
+        sellerEmail:
+            column: seller_email
+            type: string
+            length: 255
+            nullable: false
+        status:
+            type: string
+            length: 16
+            nullable: false
+    manyToOne:
+        orientation:
+            targetEntity: Orientation
+            joinColumn:
+                name: orientation_id
+                referencedColumnName: id

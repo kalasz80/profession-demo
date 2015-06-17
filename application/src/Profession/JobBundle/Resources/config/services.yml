@@ -1,0 +1,12 @@
+services:
+    job_service: 
+        class: 'Profession\JobBundle\Service\JobService'
+        arguments: 
+            - @doctrine.orm.entity_manager
+            - @=service('doctrine.orm.entity_manager').getRepository('ProfessionJobBundle:Job')
+
+    job_mailer_service: 
+        class: 'Profession\JobBundle\Service\JobMailerService'
+        arguments: 
+            - @mailer
+

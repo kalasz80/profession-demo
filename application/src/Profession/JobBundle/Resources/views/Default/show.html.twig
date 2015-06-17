@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <h1>{{ job.position }}</h1>
+    <ul>
+        <li><strong>Status: </strong>{{ job.status }}</li>
+    </ul>
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+{% endblock %}
