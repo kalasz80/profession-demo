@@ -1,0 +1,13 @@
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: profession
+    database_user: profession
+    database_password: ZfJnjYpsDnY94LJG
+    mailer_transport: mail
+    mailer_host: localhost
+    mailer_port: false
+    mailer_user: ~
+    mailer_password: ~
+    locale: en
+    secret: 10eee8386ee435129481071a26e254df9
